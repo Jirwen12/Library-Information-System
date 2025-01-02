@@ -2,8 +2,8 @@
     font-family: sans-serif;
     font-size: 8px;
     z-index: 100;
-    position: fixed;
-    top: 70px;
+    position: absolute;
+    top: 90px;
     right: 20px;
     background: #fff;
     border: 10px solid #000000;
@@ -47,7 +47,7 @@
     background: #333;
 }
 
-.dark-mode .search-bar input {
+.dark-mode .search-bar input, .dark-mode .categoryDrop {
     background: #333;
     color: #cac5c5;
 }
@@ -71,6 +71,11 @@
     background: #ad1457;
 }
 
+.pink-mode .search-bar input, .pink-mode .categoryDrop {
+    background: #eb72c4;
+    color: #ffffff;
+}
+
 /* Brown Theme */
 .brown-mode {
     background: #ae9b8b;
@@ -89,6 +94,11 @@
 
 .brown-mode .logout-button {
     background: #3e2723;
+}
+
+.brown-mode .search-bar input, .brown-mode .categoryDrop {
+    background: #735232;
+    color: #ffffff;
 }
 
 /* Blue Theme */
@@ -110,6 +120,11 @@
 
 .blue-mode .logout-button {
     background: #1565c0;
+}
+
+.blue-mode .search-bar input, .blue-mode .categoryDrop {
+    background: #5eb4e6;
+    color: #ffffff;
 }
 
 .dark-mode #nav-bar {
