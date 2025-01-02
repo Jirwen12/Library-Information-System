@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/recommended.css">
+    <link rel="stylesheet" href="css/search-bar.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/theme-selector.css">
+    
+    <link rel="stylesheet" href="css/media screen 600px.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fa fa-book"></i> Online Library System</h1>
+        <a href=""></a>
+        <a href=""></a>
+        <a href="">History<span class="tooltiptext">Profile</span></a>
+        <a href="">About Us<span class="tooltiptext">Profile</span></a>
+        <a href="#"><i class="fa fa-user"></i>
+            <span class="tooltiptext">Profile</span>
+        </a>
+    </header>
+    <div class="theme-selector" onclick="toggleTheme()">THEME</div>
+    
+    
+    
+
+
+    <main class="dashboard">
+        <div id="nav-bar">
+            <input id="nav-toggle" type="checkbox"/>
+            <div id="nav-header"><a id="nav-title" href="https://www.facebook.com/jirwen.palaje.3" target="_blank">Tools</a>
+              <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+              <hr/>
+            </div>
+            <div id="nav-content">
+              <div class="nav-button"><a href="index.html"><i class="fas fa-home"></i><span>Home</span></div></a>
+              <div class="nav-button"><i class="fas fa-user"></i><span>Profile</span></div>
+              <div class="nav-button"><i class="fas fa-star"></i><span>Favorite</span></div>
+              <hr/>
+              <div class="nav-button" onclick="logout()"><i class="fas fa-right-from-bracket"></i><span>Logout</span></div>
+        
+              <hr/>
+              <div id="nav-content-highlight"></div>
+            </div>
+            <input id="nav-footer-toggle" type="checkbox"/>
+            <div id="nav-footer">
+              <div id="nav-footer-heading">
+                <div id="nav-footer-avatar"><img src="https://scontent-mnl3-1.xx.fbcdn.net/v/t39.30808-1/469461801_953040880017460_3174436046449481362_n.jpg?stp=dst-jpg_p160x160_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=nKxSMZbosO8Q7kNvgEYnH7q&_nc_zt=24&_nc_ht=scontent-mnl3-1.xx&_nc_gid=ABeXsYFfMs-MmFiuejq7rQC&oh=00_AYBl85mSH231nj45ccQULB9hTRyVhBXkZHBDQF0QNF_Ztw&oe=677ABD17"/></div>
+                <div id="nav-footer-titlebox"><a id="nav-footer-title" href="https://www.facebook.com/jirwen.palaje.3" target="_blank">Jirwen_Palaje</a><span id="nav-footer-subtitle">Admin</span></div>
+                <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+              </div>
+              <div id="nav-footer-content">
+                <Lorem>Hello! I'm Jirwen Palaje, a passionate IT student at PLT College of Guinobatan, Incorporated. I have a deep interest in technology, web development, and creating innovative solutions. With a focus on building user-friendly systems and applications, I aim to improve the digital experience for students and the community.
+        
+                    Currently, I am working on various projects, including Student Information Systems, Library Information System and Barangay Census Tools, designed to streamline processes and make life easier. I enjoy combining modern design with functionality, ensuring that my work is not only effective but also visually appealing.
+                    
+                    As the president of the Katipunang Kabataan of Barangay Mapaco and as the College Student Council President at PLT College, I’m always looking for opportunities to contribute to my community, whether through technology or leadership. I’m constantly learning, and I am excited to continue improving my skills and knowledge to create better solutions.
+                    
+                    Feel free to explore my work, and I hope it inspires you as much as it inspires me!</Lorem>
+              </div>
+            </div>
+          </div>
+          <div id="nav-barphone">
+            <div id="nav-contentphone">
+              <div class="nav-buttonphone"><i class="fas fa-home"></i></div>
+              <div class="nav-buttonphone"><i class="fas fa-user"></i></div>
+              <div class="nav-buttonphone"><i class="fas fa-star"></i></div>
+            
+              <div class="nav-buttonphone" onclick="logout()"><i class="fas fa-right-from-bracket"></i></div>
+              
+            </div>
+
+          </div>
+        <section class="books-section">
+            <h3>Browse Our Collection</h3>
+            <div class="search-bar">
+                <input type="text" id="bookSearch" placeholder="Search by title or author...">
+            </div>
+            
+            <div class="square2">
+                <h4 style="margin-bottom: -1%; text-align: center;">RECOMMENDED</h4>
+
+                <div class="square">
+                
+                    <div class="recommendeds" id="recommendedsBooks">
+                        <!-- Books will be dynamically inserted here -->
+                    </div>
+                    <div class="recommended" id="recommendedBooks">
+                        <!-- Books will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+                
+            <div class="categorydropdown">
+                    <button class="categoryDrop" id="categoryDropButton" onclick="">
+                        CATEGORIES <i class="fa fa-arrow-down"></i>
+                    </button>
+                    <div class="category-content" id="categoryContent">
+                        <div class="book-list" id="bookList">
+                            <!-- Book Cards dynamically inserted here -->
+                        </div>
+                    </div>
+            </div>
+            
+            
+            </div>
+        </section>
+        <script src="script.js"></script>
+    
+
+    
+ <div class="collapse">         
+<button class="collapsible">Developer</button>
+<div class="content">
+    <div id="profilehead">
+        <div id="profileheading">
+            <div id="profile"><img src="https://scontent-mnl3-1.xx.fbcdn.net/v/t39.30808-1/469461801_953040880017460_3174436046449481362_n.jpg?stp=dst-jpg_p160x160_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=nKxSMZbosO8Q7kNvgEYnH7q&_nc_zt=24&_nc_ht=scontent-mnl3-1.xx&_nc_gid=ABeXsYFfMs-MmFiuejq7rQC&oh=00_AYBl85mSH231nj45ccQULB9hTRyVhBXkZHBDQF0QNF_Ztw&oe=677ABD17"/></div>
+            <br><div id="profiletitlebox"><a id="profiletitle" href="">Jirwen Palaje</a><br><span id="profilesubtitle">Admin</span></div>
+        <div class="icons">
+            <a href="https://www.instagram.com/jirwen_1205/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/jirwen.palaje.3" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@jirwen_0612" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+
+        </div>
+        </div>
+    </div>
+    <br><br><br><br>
+        <p>Hello! I'm Jirwen Palaje, a passionate IT student at PLT College of Guinobatan, Incorporated. I have a deep interest in technology, web development, and creating innovative solutions. With a focus on building user-friendly systems and applications, I aim to improve the digital experience for students and the community.
+        
+    Currently, I am working on various projects, including Student Information Systems, Library Information System and Barangay Census Tools, designed to streamline processes and make life easier. I enjoy combining modern design with functionality, ensuring that my work is not only effective but also visually appealing.
+    
+    As the president of the Katipunang Kabataan of Barangay Mapaco and as the College Student Council President at PLT College, I’m always looking for opportunities to contribute to my community, whether through technology or leadership. I’m constantly learning, and I am excited to continue improving my skills and knowledge to create better solutions.
+    
+    Feel free to explore my work, and I hope it inspires you as much as it inspires me!</p>
+</div>    
+
+<br><br><br>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+</main>
+<footer class="footer">
+  <p>© 2024 Aesthetic Library. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

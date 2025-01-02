@@ -1,0 +1,146 @@
+/* Recommended books section styling */
+.recommended {
+    border-radius: 8px;
+    position: relative;
+    width: 200px;
+    height: 350px;
+    overflow: hidden;
+    justify-content: center;
+    }
+    
+    .recommended-book {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0.7);
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+    }
+    
+    .recommended img {
+    width: 250px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    }
+    
+    .recommended img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    }
+    
+    /* Show the first image */
+    .recommended-book.show-1 {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    }
+    
+    /* Show the second image */
+    .recommended-book.show-2 {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    }
+    
+    /* Show the third image */
+    .recommended-book.show-3 {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    }
+    
+    /* Show the fourth image */
+    .recommended-book.show-4 {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    }
+    
+    /* Show the fifth image */
+    .recommended-book.show-5 {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    }
+    
+    
+    /* Recommended books section styling */
+    .recommendeds {
+    border-radius: 8px;
+    position: relative;
+    width: 200px;
+    height: 350px;
+    top: 0;
+    overflow: visible;
+    justify-content: center;
+    }
+    
+    .recommendeds-book {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0.7);
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+    }
+    
+    .recommendeds img {
+    width: 250px;
+    height: 350px;
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    }
+    
+    .recommendeds img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    }
+    
+    /* Show the first image */
+    .recommendeds-book.show-1 {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    }
+    
+    /* Show the second image */
+    .recommendeds-book.show-2 {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    }
+    
+    /* Show the third image */
+    .recommendeds-book.show-3 {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    }
+    
+    /* Show the fourth image */
+    .recommendeds-book.show-4 {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    }
+    
+    /* Show the fifth image */
+    .recommendeds-book.show-5 {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    }
+
+
+    .square2{
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        top: 25%;
+        border-radius: 20px;
+        border: .5px solid black;
+        box-shadow: 2px 2px 10px  gray;
+        margin-bottom: 5%;
+        }
+        .square{
+            width: auto;
+        display: flex;
+        }
+        
+        .square h4{
+        color: #000000;
+        }

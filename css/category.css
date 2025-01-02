@@ -1,0 +1,52 @@
+/* Adjusting category dropdown positioning */
+.categorydropdown {
+    display: grid;
+    place-items: center;
+    z-index: 4;
+    transition:linear .5s ease-in-out ;
+}
+
+/* Styling the category drop button */
+.categoryDrop {
+background-color: #007BFF;
+border-radius: 10px;
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+font-size: 16px;
+display: flex;
+width: 170px; /* Adjust width */
+transition: all .5s ease-in-out ;
+}
+
+/* Adding icon to the category button */
+.categoryDrop i {
+margin-left: 10px;
+}
+
+/* Initially hide the category dropdown content */
+.category-content {
+justify-content: center;
+align-items: center;
+align-items: center;
+width: 60%;
+position: static;
+display: none; /* Initially hide the content */
+padding: 15px;
+z-index: 1;
+transition: all .5s ease-in-out;
+}
+
+
+
+.book-list {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+gap: 5px;
+padding: 10px;
+width: 100vw;
+justify-items: center;
+transition: all 3s ease-in-out ;
+margin-bottom: 20%;
+}
