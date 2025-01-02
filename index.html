@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/theme-selector.css">
-    
+    <link rel="stylesheet" href="css/user#.css">
     <link rel="stylesheet" href="css/media screen 600px.css">
 
     <style>
@@ -22,9 +22,10 @@
 </head>
 <body>
     <header>
-        <h1><i class="fa fa-book"></i> Online Library System</h1>
+        <h3><i class="fa fa-book"></i> Online Library System</h3>
         <a href=""></a>
         <a href=""></a>
+        
         <a href="">History<span class="tooltiptext">Profile</span></a>
         <a href="">About Us<span class="tooltiptext">Profile</span></a>
         <a href="#"><i class="fa fa-user"></i>
@@ -34,8 +35,6 @@
     <div class="theme-selector" onclick="toggleTheme()">THEME</div>
     
     
-    
-
 
     <main class="dashboard">
         <div id="nav-bar">
@@ -46,7 +45,7 @@
             </div>
             <div id="nav-content">
               <div class="nav-button"><a href="index.html"><i class="fas fa-home"></i><span>Home</span></div></a>
-              <div class="nav-button"><i class="fas fa-user"></i><span>Profile</span></div>
+              <div class="nav-button"><a href="profile.html"><i class="fas fa-user"></i><span>Profile</span></div></a>
               <div class="nav-button"><i class="fas fa-star"></i><span>Favorite</span></div>
               <hr/>
               <div class="nav-button" onclick="logout()"><i class="fas fa-right-from-bracket"></i><span>Logout</span></div>
@@ -72,10 +71,12 @@
               </div>
             </div>
           </div>
+          
           <div id="nav-barphone">
+            
             <div id="nav-contentphone">
-              <div class="nav-buttonphone"><i class="fas fa-home"></i></div>
-              <div class="nav-buttonphone"><i class="fas fa-user"></i></div>
+              <div class="nav-buttonphone"><a href="index.html"><i class="fas fa-home"></i></a></div>
+              <div class="nav-buttonphone"><a href="profile.html"><i class="fas fa-user"></a></i></div>
               <div class="nav-buttonphone"><i class="fas fa-star"></i></div>
             
               <div class="nav-buttonphone" onclick="logout()"><i class="fas fa-right-from-bracket"></i></div>
@@ -84,6 +85,7 @@
 
           </div>
         <section class="books-section">
+          
             <h3>Browse Our Collection</h3>
             <div class="search-bar">
                 <input type="text" id="bookSearch" placeholder="Search by title or author...">
@@ -147,6 +149,7 @@
 </div>    
 
 <br><br><br>
+
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -162,6 +165,11 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+// Logout function
+function logout() {
+        window.location.href = "login.html"; // Redirect to the login page
+    }
 </script>
 
 
