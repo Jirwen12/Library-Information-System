@@ -159,7 +159,7 @@
 
   .collapsible {
     background-color: #c8c4c4;
-    color: rgb(0, 0, 0);
+    color: rgb(248, 248, 248);
     cursor: pointer;
     width: 30%;
     padding: 10px;
@@ -221,7 +221,7 @@
   }
 
   #profiletitle{
-    color: black;
+    color: rgb(51, 50, 50);
     text-decoration: none;
   }
 
@@ -238,7 +238,7 @@
   }
 
   .icons i{
-    color: #000000;
+    color: #414040;
     font-size: 20px;
   }
 
@@ -248,5 +248,40 @@
   .search-bar{
     position: static;
     width: auto;
+  }
+  .nav-buttonphone i{
+    color: #232323;
+  }
+  
+  .dark-mode #nav-barphone, 
+  .dark-mode .content, 
+  .dark-mode .collapsible,
+  .dark-mode #profiletitle,
+  .dark-mode .icons i, 
+  .dark-mode .nav-buttonphone i{
+    background-color: #232323;
+    color: #e3e3e3;
+  }
+  .pink-mode #nav-barphone, 
+  .pink-mode .content, 
+  .pink-mode .collapsible, 
+  .pink-mode .nav-buttonphone i{
+    background-color: #f4a1eb;
+    color: #a70689;
+  }
+  .brown-mode #nav-barphone, 
+  .brown-mode .content, 
+  .brown-mode .collapsible, 
+  .brown-mode .nav-buttonphone i{
+    background-color: #bc896b;
+    color: #a14300;
+  }
+
+  .blue-mode #nav-barphone, 
+  .blue-mode .content,
+  .blue-mode .collapsible, 
+  .blue-mode .nav-buttonphone i{
+    background-color: #79aaea;
+    color: #2127cc;
   }
 }
